@@ -17,19 +17,22 @@
     <meta property="og:title" content="Transit Bouchebka | Dédouanement & Transport - AZIRI Abderazak" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://Aziriabderazak.com/" />
-    <meta property="og:image" content="https://Aziriabderazak.com/image/image.jpg" />               
-  
+    <meta property="og:image" content="https://Aziriabderazak.com/image/image.jpg" />
     <meta
       property="og:description"
       content="Transit et dédouanement : AZIRI Abderazak (Déclarant GUERBOUCI Ammar) à Bouchebka, Tébessa. Prestations douanières et transport de fret avec rapidité et sécurité."
     />
     <title>Transit Bouchebka | Dédouanement & Transport de marchandises</title>
-    <!-- Font Awesome 6 -->
+    
+    <!-- CORRECT FAVICON - using SVG truck icon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23CC7B2E'%3E%3Cpath d='M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z'/%3E%3C/svg%3E">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23CC7B2E'%3E%3Cpath d='M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z'/%3E%3C/svg%3E">
+    
+    <!-- Font Awesome 6 (CDN + fallback) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Google Fonts: modern sans -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-     <!-- CORRECT FAVICON - using SVG truck icon -->
-
+    
     <style>
         * {
             margin: 0;
@@ -108,14 +111,12 @@
             color: #CC7B2E;
         }
 
-        /* main container */
         .landing {
             max-width: 1400px;
             margin: 0 auto;
             padding: 1.5rem 2rem 3rem;
         }
 
-        /* language switcher */
         .lang-switch {
             display: flex;
             justify-content: flex-end;
@@ -146,7 +147,6 @@
             border-color: #FFB87A;
         }
 
-        /* Hero Section WITH IMAGE - FULL IMAGE WITHOUT BACKGROUND */
         .hero-brand {
             border-radius: 2.5rem;
             margin-bottom: 3rem;
@@ -268,7 +268,6 @@
             transform: translateY(-2px);
         }
 
-        /* stats row */
         .stats-grid {
             display: flex;
             flex-wrap: wrap;
@@ -294,7 +293,6 @@
             font-weight: 500;
         }
 
-        /* services section */
         .services-section {
             background: white;
             border-radius: 2rem;
@@ -354,7 +352,6 @@
             font-size: 0.9rem;
         }
 
-        /* company & contact info + map section */
         .info-highlight {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -409,7 +406,6 @@
             color: #B45A1A;
         }
 
-        /* FIXED WHATSAPP BUTTON - WITH DROPUP MENU FOR TWO NUMBERS */
         .whatsapp-fixed {
             position: fixed;
             bottom: 28px;
@@ -499,7 +495,6 @@
             margin-right: 5px;
         }
         
-        /* Close menu when clicking outside */
         .whatsapp-overlay {
             position: fixed;
             top: 0;
@@ -514,7 +509,6 @@
             display: block;
         }
 
-        /* ===== RESPONSIVENESS - IMAGE FULL WITHOUT BACKGROUND ===== */
         @media (max-width: 1000px) {
             .hero-inner {
                 grid-template-columns: 1fr;
@@ -649,7 +643,7 @@
             }
         }
 
-        /* language support */
+        /* Language support: French first, Arabic second */
         .ar-text { display: none; }
         .fr-text { display: block; }
         body.lang-fr .ar-text { display: none; }
@@ -678,31 +672,14 @@
             padding-right: 1rem;
         }
         
-        /* Remove any background from image container */
         .hero-image {
             background: transparent !important;
-        }
-        
-        /* Fallback icon styling - no background */
-        .hero-image .fallback-icon {
-            display: none;
-            font-size: 4rem;
-            color: #CC7B2E;
-            text-align: center;
-            padding: 2rem;
-            background: #FEF5ED;
-            width: 100%;
-            height: 100%;
-            align-items: center;
-            justify-content: center;
         }
     </style>
 </head>
 <body class="lang-fr">
-    <!-- OVERLAY FOR CLOSING WHATSAPP MENU -->
     <div class="whatsapp-overlay" id="whatsappOverlay"></div>
     
-    <!-- HEADER WITH COMPANY NAME -->
     <header class="main-header">
         <div class="header-container">
             <div class="logo-area">
@@ -727,10 +704,8 @@
     </header>
 
     <div class="landing">
-        <!-- Hero Section WITH IMAGE - FULL IMAGE WITHOUT BACKGROUND -->
         <div class="hero-brand" id="home">
             <div class="hero-inner">
-                <!-- Left side: Text content -->
                 <div class="hero-content">
                     <div class="brand-header">
                         <div class="logo-area">
@@ -757,7 +732,6 @@
                         <span class="fr-text">Demandez le dédouanement</span>
                     </a>
                     
-                    <!-- Statistics bar -->
                     <div class="stats-grid">
                         <div class="stat-card"><div class="stat-number">20+</div><div class="stat-label ar-text">سنة خبرة</div><div class="stat-label fr-text">Années expérience</div></div>
                         <div class="stat-card"><div class="stat-number">500+</div><div class="stat-label ar-text">عملية ناجحة</div><div class="stat-label fr-text">Opérations réussies</div></div>
@@ -765,7 +739,6 @@
                     </div>
                 </div>
                 
-                <!-- Right side: Modern Image - FULL IMAGE, NO BACKGROUND -->
                 <div class="hero-image">
                     <img src="image/image.jpg" 
                          alt="Transport de marchandises - Transit Bouchebka"
@@ -774,7 +747,6 @@
             </div>
         </div>
 
-      <!-- Services Section -->
         <div class="services-section" id="services">
             <div class="section-title"><i class="fas fa-cubes"></i> <span class="ar-text">خدمات لوجستية متنوعة</span><span class="fr-text">Services logistiques variés</span></div>
             <div class="section-sub"><span class="ar-text">نقدم حلولاً جمركية ونقل بجودة عالية - نضمن سلامة بضائعكم ومركباتكم</span><span class="fr-text">Nous offrons des solutions douanières et de transport de haute qualité</span></div>
@@ -784,7 +756,7 @@
                 <div class="service-item"><i class="fas fa-file-signature"></i><h4><span class="ar-text">استشارات جمركية</span><span class="fr-text">Conseil douanier</span></h4><p><span class="ar-text">استشارات متخصصة في كل ما يخص التخليص الجمركي والإجراءات ونقل البضائع عبر الحدود والدول.</span><span class="fr-text">Support juridique et administratif pour faciliter import-export.</span></p></div>
             </div>
         </div>
-        <!-- Contact & Map Section -->
+        
         <div class="info-highlight" id="contact">
             <div class="contact-card">
                 <div class="section-title" style="font-size:1.5rem;"><i class="fas fa-address-card"></i> <span class="ar-text">معلومات الاتصال</span><span class="fr-text">Coordonnées</span></div>
@@ -808,7 +780,6 @@
             </div>
         </div>
 
-        <!-- Additional info -->
         <div style="background: #FFF9F2; border-radius: 1.5rem; padding: 1.5rem; text-align: center; margin-top: 1rem; border:1px solid #FFE1C4;">
             <i class="fas fa-shield-alt" style="font-size: 2rem; color:#CC7B2E;"></i>
             <p style="margin-top: 0.5rem; font-weight: 500;"><span class="ar-text">نحن نضمن سلامة بضائعك ومركباتك بأعلى معايير الحماية</span><span class="fr-text">Nous garantissons l'intégrité de vos marchandises et véhicules</span></p>
@@ -820,7 +791,6 @@
         </div>
     </div>
 
-    <!-- FIXED WHATSAPP BUTTON WITH TWO NUMBERS -->
     <div class="whatsapp-fixed" id="whatsappFixed">
         <div class="whatsapp-main-btn" id="whatsappBtn">
             <i class="fab fa-whatsapp"></i>
@@ -829,20 +799,19 @@
             <a href="https://wa.me/213661366952?text=Bonjour%20je%20souhaite%20des%20informations%20sur%20le%20dédouanement%20et%20le%20transport" class="whatsapp-option" target="_blank" rel="noopener noreferrer">
                 <div>
                     <div class="wa-number">+213 661 36 69 52</div>
-                    <div class="wa-label"><span class="ar-text">رقم 01</span></div>
+                    <div class="wa-label"><span class="ar-text">رقم 01</span><span class="fr-text">Principal</span></div>
                 </div>
             </a>
             <a href="https://wa.me/213550687811?text=Bonjour%20je%20souhaite%20des%20informations%20sur%20le%20dédouanement%20et%20le%20transport" class="whatsapp-option" target="_blank" rel="noopener noreferrer">
                 <div>
                     <div class="wa-number">+213 550 68 78 11</div>
-                    <div class="wa-label"><span class="ar-text">رقم 02</span></div>
+                    <div class="wa-label"><span class="ar-text">رقم 02</span><span class="fr-text">Secondaire</span></div>
                 </div>
             </a>
         </div>
     </div>
 
     <script>
-        // Language toggle: French first (default), Arabic second
         const langBtns = document.querySelectorAll('.lang-btn');
         const body = document.body;
 
@@ -870,14 +839,12 @@
         });
         
         const saved = localStorage.getItem('transit_bouchebka_lang');
-        // FRENCH FIRST : default to 'fr' if no saved preference
         if(saved && (saved === 'ar' || saved === 'fr')) {
             setLanguage(saved);
         } else {
             setLanguage('fr');
         }
         
-        // WhatsApp button toggle menu
         const whatsappFixed = document.getElementById('whatsappFixed');
         const whatsappBtn = document.getElementById('whatsappBtn');
         const overlay = document.getElementById('whatsappOverlay');
